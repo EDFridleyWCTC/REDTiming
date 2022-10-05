@@ -1,0 +1,285 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+}
+body {
+    font-family:"Bahnschrift Light", Arial, sans-serif;
+}
+main {
+    background-color:#2B2D42;
+}
+header {
+    background-color:#EF233C;
+    text-align:center;
+    padding:20px;
+    margin:0;
+}
+header h1 {
+    font-size:36pt;
+    letter-spacing:12px;
+    color:#EDF2F4;
+    font-family:"Bahnschrift Light", Arial, sans-serif;
+}
+header a {
+    text-decoration:none;
+}
+nav {
+    width:100%;
+    background-color:#8D99AE;
+    margin:0;
+    text-align:center;
+    font-family:Bahnschrift, Arial, sans-serif;
+    padding:10px 0px 10px 0px;
+    height:auto;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav li {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    width:100%;
+    border-bottom:1px solid #2B2D42;
+}
+nav a {
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:#D90429;
+    background-color:#EDF2F4;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+nav a:hover {
+    text-decoration:none;
+    color:darkred;
+    background-color:#CCCCCC;
+}
+main a {
+    color:#2B2D42;
+}
+h2 {
+    text-align:center;
+    font-size:32pt;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+h3 {
+    color:#EF233C;
+}
+section {
+    margin:1em;
+}
+footer {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+}
+footer a {
+    text-decoration:none;
+    color:black;
+}
+dt {
+    font-weight:bold;
+    margin-top:1em;
+}
+dd {
+    padding-left:1em;
+}
+form {
+    width:100%;
+    display:block;
+    justify-content:flex-start;
+    padding-right:10%;
+}
+input {
+    margin-bottom:1em;
+    width:90%;
+}
+textarea {
+    width:90%;
+}
+.content {
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1.5em 2em 1em 2em;
+    background-color:#EDF2F4;
+    color:#2B2D42;
+    box-shadow:3px 3px 3px #2A2A2A;
+}
+.col-40 {
+    width:100%;
+}
+.col-50 {
+    width:100%;
+}
+.col-60 {
+    width:100%;
+}
+.break {
+    flex-basis:100%;
+    height:0;
+}
+#timinghero {
+    height:300px;
+    background-image:url("runners4.JPEG");
+    background-size:100% auto;
+    background-repeat:no-repeat;
+}
+#lynx {
+    height:300px;
+    background-image:url("camera.jpg");
+    background-size:100% auto;
+    background-repeat:no-repeat;
+}
+#contacthero {
+    height:300px;
+    margin:1em;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-image:url("track2.jpg");
+}
+#resultshero {
+    background-image:url("clipboard.jpg");
+    height:300px;
+    background-size:80% auto;
+    background-position:right;
+    float:right;
+    margin:1em;
+    background-repeat:no-repeat;
+}
+#footerlogo {
+    display:none;
+    color:#EF233C;
+    letter-spacing:1em;
+    float:right;
+}
+#flow {
+    display:flex;
+    flex-direction:column;
+}
+#timingservices {
+    display:block;
+    width:100%;
+}
+#contactform {
+    display:block;
+}
+#formcontainer {
+    display:block;
+}
+#mySubmit {
+    width:120px;
+    height:45px;
+    background-color:#D90429;
+    color:#EDF2F4;
+    font-weight:bold;
+    margin-left:1em;
+    font-size:1.2em;
+}
+#mySubmit:hover {
+    background-color:darkred;
+}
+#resultspage {
+    display:block;
+    text-align:center;
+}
+#results {
+    width:120px;
+    height:45px;
+    background-color:#D90429;
+    color:#EDF2F4;
+    font-weight:bold;
+    font-size:1em;
+    margin-top:1em;
+}
+#results:hover {
+    background-color:darkred;
+}
+#pasteventslist {
+    list-style:none;
+    text-align:left;
+}
+#pastevents {
+    clear:right;
+}
+p {
+    text-align:left;
+}
+@media(min-width:500px) {
+    header h1 {
+        font-size:42pt;
+    }
+    nav li {
+        display:inline-block;
+        width:7em;
+        border-bottom:none;
+    }
+    #timinghero {
+        background-image:url("runners3.jpeg");
+        height:175px;
+    }
+    #lynx {
+        height:150px;
+        width:40%;
+        float:right;
+    }
+    #contacthero {
+        background-image:url("track.jpg");
+    }
+}
+@media(min-width:800px) {
+    header h1 {
+        font-size:48pt;
+    }
+    nav li {
+        display:inline-block;
+        width:7em;
+        border-bottom:none;
+    }
+    #flow {
+        display:flex;
+        flex-direction:row;
+    }
+    #timingservices {
+        display:flex;
+        flex-direction:row;
+    }
+    .col-40 {
+        width:40%;
+    }
+    .col-50 {
+        width:50%;
+    }
+    .col-60 {
+        width:60%;
+    }
+    #footerlogo {
+        display:block;
+    }
+    .content {
+        width:80%;
+    }
+    #formcontainer {
+        display:flex;
+    }
+    .formsection {
+        width:30em;
+    }
+    #timinghero {
+        background-position:center;
+        height:300px;
+    }
+    #lynx {
+        height:300px;
+        width:auto;
+        background-size:100% auto;
+        float:none;
+    }
+}
